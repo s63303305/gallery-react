@@ -1,6 +1,4 @@
-import React, {
-	Component
-} from 'react';
+import React from 'react';
 
 export default class imageFigure extends React.Component {
 
@@ -131,7 +129,7 @@ export default class imageFigure extends React.Component {
 		//随机生成0-2个图片的Index
 		for(let i = 0; i < topImg; i++) {
 			let index = Math.floor(Math.random() * (imgsArrangeArr.length - 1));
-			if(topImgIndex[0] != index) {
+			if(topImgIndex[0] !== index) {
 				topImgIndex.push(index);
 			}
 		}
